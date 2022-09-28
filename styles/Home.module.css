@@ -4,12 +4,16 @@
 
 .main {
   min-height: 100vh;
-  padding: 4rem 0;
+  /* padding: 4rem 0; */
   flex: 1;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
+  background-image: url('../pages/sources/brooke-cagle-cb4Dv50LN1Y-unsplash\ 1.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  color: white;
 }
 
 .footer {
@@ -107,7 +111,6 @@
   height: 1em;
   margin-left: 0.5rem;
 }
-
 @media (max-width: 600px) {
   .grid {
     width: 100%;
