@@ -1,6 +1,4 @@
-.container {
-  padding: 0 2rem;
-}
+
 
 .main {
   min-height: 100vh;
@@ -111,10 +109,27 @@
   height: 1em;
   margin-left: 0.5rem;
 }
+.titleDescription{
+  flex-grow: 1 ;
+  width:'200%';
+}
+.title{
+  font-size: 4vw;
+  text-align: start;
+}
+.para{
+  font-size: 1vw;
+}
 @media (max-width: 600px) {
   .grid {
-    width: 100%;
+    width: 200%;
     flex-direction: column;
+  }
+}
+
+@media (min-width: 1000px) {
+  .main{
+    background-size: cover;
   }
 }
 

@@ -1,5 +1,6 @@
 import * as React from 'react';
 import {useState} from 'react'
+import Link from 'next/Link'
 import {AppBar ,
 Box,
 Toolbar,
@@ -107,7 +108,9 @@ const ResponsiveAppBar = () => {
 
           <Box sx={{ flexGrow: 0 }}>
             <Tooltip title="Open settings">
-              <Button onClick={handleOpenUserMenu} sx={{ p: 0, backgroundColor:'white'}} variant='outlined'>Get access</Button>
+              <Link href="/vlog">
+                <Button onClick={handleOpenUserMenu} sx={{ p: 0, backgroundColor:'white'}} variant='outlined'>Get access</Button>
+              </Link>
             </Tooltip>
             <Menu
               sx={{ mt: '45px' }}

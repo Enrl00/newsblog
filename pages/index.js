@@ -1,8 +1,11 @@
-import { style } from '@mui/system'
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import ResponsiveAppBar from './components/appBar'
+import { Grid, Box, TextField, Button} from '@mui/material';
+
+import * as React from 'react';
+
 export default function Home() {
   return (
     <div className={styles.container}>
@@ -13,8 +16,22 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-       <ResponsiveAppBar/>
-       
+        <ResponsiveAppBar />
+        <Box className={styles.titleDescription}>
+          <Grid container spacing={0} sx={{marginLeft:'-20vw', marginTop:'10vw',width:'100%'}}>
+            <Grid item xs={12}>
+              <Box className={styles.title}>Instant colaborations <br /> for remote teams</Box>
+                <br />
+              <Box className={styles.para}>All in one for your remote team chats, <br /> collaboration and track projects</Box>
+                <br/>
+              <Box sx={{display:'flex', flexDirection:'row'}}>
+                <TextField variant='filled' label="Email"/>
+                <Button>Get early access</Button>
+              </Box>
+            </Grid>
+          </Grid>
+        </Box>
+
       </main>
 
       <footer className={styles.footer}>
